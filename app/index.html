@@ -25,6 +25,13 @@
       <script src="bower_components/json3/lib/json3.min.js"></script>
     <![endif]-->
 
+    <div class="header">
+      <ul class="nav nav-pills pull-right" id="main_nav">
+        <li class="active"><a ng-href="/">Home</a></li>
+        <li><a ng-href="/#/about">About</a></li>
+      </ul>
+      <h3 class="text-muted">online soapbox</h3>
+    </div>
     <!-- Add your site or application content here -->
     <div class="container" ng-view=""></div>
 
@@ -65,8 +72,13 @@
         <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/utils.js"></script>
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/TownHall.js"></script>
+        <script src="scripts/controllers/Exclusive.js"></script>
+        <script src="scripts/controllers/CandidatePresentation.js"></script>
+        <script src="scripts/controllers/About.js"></script>
         <!-- endbuild -->
 </body>
 </html>
