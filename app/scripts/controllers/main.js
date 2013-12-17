@@ -7,4 +7,5 @@ angular.module('onlineSoapboxApp')
       'AngularJS',
       'Karma'
     ];
+	setupNav("main");
   }]);
